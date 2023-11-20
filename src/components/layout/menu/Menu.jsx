@@ -11,11 +11,11 @@ const Menu = () => {
             <ul>
                 {menu.map((item, index) =>
                     <li key={`_menu_${index}`}>
-                        <Link to={item.link}>{item.title}</Link>
+                        <Link className={styles.li__text} to={item.link}>{item.title}</Link>
                     </li>
                 )}
-                <li>
-                    <buuton onClick={logoutHandler}>Выйти</buuton>
+                <li className={styles.li__text}>
+                    <button onClick={logoutHandler}>Выйти</button>
                 </li>
             </ul>
         </nav>
